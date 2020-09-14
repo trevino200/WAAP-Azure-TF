@@ -8,28 +8,28 @@ variable "victim_company" {
 variable "location" {
   type        = string
   description = "Azure region where the resources will be created"
-  default     = "West US 2"
+  default     = "East US"
 }
 
 # victim vnet cidr
 variable "victim-network-vnet-cidr" {
   type        = string
   description = "VNET"
-  default     = "10.20.0.0/16"
+  default     = "10.101.0.0/21"
 }
 
 # victim vnet cidr
 variable "victim-network-subnet-cidr" {
   type        = string
   description = "Subnet"
-  default     = "10.20.0.0/24"
+  default     = "10.101.5.0/24"
 }
 
 # SC_EXT private ip
 variable "internal-private-ip" {
   type        = string
   description = "Subnet"
-  default     = "10.20.0.10"
+  default     = "10.101.5.10"
 }
 
 # environment
@@ -43,7 +43,7 @@ variable "environment" {
 variable "vulnvm-name" {
   type        = string
   description = "Name of Vulnerable VM"
-  default     = "JuiceShopWAAPDemo"
+  default     = "JuiceShopWAAPdemo"
 }
 
 # username
