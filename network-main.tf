@@ -5,6 +5,7 @@ resource "azurerm_resource_group" "victim-network-rg" {
   tags = {
     application = var.victim_company
     environment = var.environment
+    tag-template = var.tag-template
   }
 }
 
@@ -17,6 +18,7 @@ resource "azurerm_virtual_network" "victim-network-vnet" {
   tags = {
     application = var.victim_company
     environment = var.environment
+    tag-template = var.tag-template
   }
 }
 
