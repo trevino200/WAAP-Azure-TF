@@ -39,6 +39,13 @@ variable "environment" {
   default     = "staging"
 }
 
+# tag-template
+variable "tag-template" {
+  type        = string
+  description = "true or false"
+  default     = "true"
+}
+
 # vulnvm-name
 variable "vulnvm-name" {
   type        = string
