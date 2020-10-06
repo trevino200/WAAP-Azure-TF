@@ -43,6 +43,7 @@ resource "azurerm_network_security_group" "victim-linux-nsg" {
   }
   tags = {
     environment = var.environment
+    tag-template = var.tag-template
   }
 }
 
@@ -123,6 +124,7 @@ resource "azurerm_virtual_machine" "main" {
   }
   tags = {
     environment = var.environment
+    tag-template = var.tag-template
   }
 }
 
