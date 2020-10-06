@@ -15,21 +15,21 @@ variable "location" {
 variable "victim-network-vnet-cidr" {
   type        = string
   description = "VNET"
-  default     = "10.101.0.0/21"
+  default     = "10.102.0.0/21"
 }
 
 # victim vnet cidr
 variable "victim-network-subnet-cidr" {
   type        = string
   description = "Subnet"
-  default     = "10.101.5.0/24"
+  default     = "10.102.5.0/24"
 }
 
 # SC_EXT private ip
 variable "internal-private-ip" {
   type        = string
   description = "Subnet"
-  default     = "10.101.5.10"
+  default     = "10.102.5.10"
 }
 
 # environment
